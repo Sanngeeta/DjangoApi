@@ -18,6 +18,7 @@ from django.urls import path
 # from django.conf.urls import url, include 
 from Profile import views 
 
+from updater import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),

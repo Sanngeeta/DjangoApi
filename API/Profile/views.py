@@ -15,7 +15,7 @@ from bson import ObjectId
 
 from rest_framework.response import Response
 # Create your views here.
-  
+
 
 @api_view(['GET', 'POST', 'DELETE'])
 @csrf_exempt
