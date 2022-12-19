@@ -99,7 +99,7 @@ def update(request):
 
         origin.pull()
 
-        return HttpResponse("Updated code on PythonAnywhere!........")
+        return HttpResponse("Updated code on PythonAnywhere!...")
     else:
         return HttpResponse("Couldn't update the code on PythonAnywhere")
 
