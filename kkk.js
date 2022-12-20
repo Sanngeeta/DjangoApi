@@ -49,7 +49,16 @@
 // myFun()
 // console.log(global);
 
-var a 
-console.log(a);
+// var a=20
+// function add(){
+//     a=10
+// }
+// add()
+// console.log(a)
 
-a=10
+// const a=10
+
+// {    
+//     console.log(a);
+// }
+// console.log(a);
