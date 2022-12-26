@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import render
-# import git
+import git
 from django.http import HttpResponse
 
 from django.views.decorators.csrf import csrf_exempt
@@ -86,46 +86,22 @@ def profileDetails(request, id):
 # SHA256:k4roWrGbSIVRx9Q+IoZu6B+KO1F8mTa32dgc5qxmCyU
 
 
-# @csrf_exempt
-# def update(request):
-#     if request.method == "POST":
-#         '''
-#         pass the path of the diectory where your project will be 
-#         stored on PythonAnywhere in the git.Repo() as parameter.
-#         Here the name of my directory is "test.pythonanywhere.com"
-#         '''
-#         repo = git.Repo("sangeetapaswan.pythonanywhere.com/") 
-#         origin = repo.remotes.origin
-
-#         origin.pull()
-
-#         return HttpResponse("Updated code on PythonAnywhere!....")
-#     else:
-#         return HttpResponse("Couldn't update the code on PythonAnywhere...")
-
-
-
-
-
-
-
 @csrf_exempt
 def update(request):
-    if request.method == "GET":
+    if request.method == "POST":
         '''
         pass the path of the diectory where your project will be 
         stored on PythonAnywhere in the git.Repo() as parameter.
         Here the name of my directory is "test.pythonanywhere.com"
         '''
-        # repo = git.Repo("sangeetapaswan.pythonanywhere.com/") 
-        # origin = repo.remotes.origin
+        repo = git.Repo("sangeetapaswan.pythonanywhere.com/") 
+        origin = repo.remotes.origin
 
-        # origin.pull()
+        origin.pull()
 
         return HttpResponse("Updated code on PythonAnywhere!....")
     else:
         return HttpResponse("Couldn't update the code on PythonAnywhere...")
-
 
 
 
