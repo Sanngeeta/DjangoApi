@@ -99,14 +99,43 @@ CORS_ORIGIN_WHITELIST = (
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'Profile',
+#         'HOST': '127.0.0.1',
+#         'PORT': 27017,
+#     }
+# }
+
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'Profile',
-        'HOST': '127.0.0.1',
-        'PORT': 27017,
+        # 'HOST': '127.0.0.1',
+        # 'PORT': 27017,
+        'ENFORCE_SCHEMA': False,
+        'CLIENT':{
+            'host':'mongodb+srv://user:user@cluster0.kkcyd7x.mongodb.net/?retryWrites=true&w=majority'
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
