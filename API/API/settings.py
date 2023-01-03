@@ -37,7 +37,7 @@ SECRET_KEY = 'django-insecure-9=fcw51#p5t%dx)9x!u$p=01eat2r&1-5)+o!c5*5w=3t-mmm3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','http://bizlexis.pythonanywhere.com/','127.0.0.1']
+ALLOWED_HOSTS = ['localhost','bizlexis.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
