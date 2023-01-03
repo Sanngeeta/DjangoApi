@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import render
-# import git
+import git
 from django.http import HttpResponse
 
 from django.views.decorators.csrf import csrf_exempt
@@ -94,7 +94,7 @@ def update(request):
         stored on PythonAnywhere in the git.Repo() as parameter.
         Here the name of my directory is "test.pythonanywhere.com"
         '''
-        repo = git.Repo("sangeetapaswan.pythonanywhere.com/") 
+        repo = git.Repo("bizlexis.pythonanywhere.com/") 
         origin = repo.remotes.origin
 
         origin.pull()
